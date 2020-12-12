@@ -7,7 +7,7 @@ export const HEROES: Hero[] = [
     { id: 14, name: 'Colossus' },
     { id: 15, name: 'Lince Negra' },
     { id: 16, name: 'Fenix' },
-    { id: 17, name: 'Banshee' },
+    { id: 17, name: 'Tempestade' },
     { id: 18, name: 'Apache' },
     { id: 19, name: 'Fera' },
     { id: 20, name: 'Homem de Gelo' }
