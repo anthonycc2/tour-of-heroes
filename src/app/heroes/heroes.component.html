@@ -1,7 +1,9 @@
 <h2>Meus Heróis</h2>
-<ul>
-    <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
-        <span class="badge">{{hero.id}}</span> {{hero.name}}
+<ul class="heroes">
+    <li *ngFor="let hero of heroes">
+        <a routerLink="/detail/{{hero.id}}">
+            <span class="badge">{{hero.id}}</span> {{hero.name}}
+        </a>
     </li>
 </ul>
 
@@ -21,4 +23,4 @@
     <label>Nome: </label><input [(ngModel)]="selectedHero.name" placeholder="Digite o nome aqui">
 </div-->
 
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+<!--app-hero-detail [hero]="selectedHero"></app-hero-detail-->
