@@ -7,6 +7,16 @@
     </li>
 </ul>
 
+<div>
+    <label>Hero name:
+      <input #heroName />
+    </label>
+    <!-- (click) passes input value to add() and then clears the input -->
+    <button (click)="add(heroName.value); heroName.value=''">
+      Adicionar
+    </button>
+</div>
+
 <!--h2>Detalhes de {{hero.name}}</h2>
 <div>
     <span>id: </span>{{hero.id}}

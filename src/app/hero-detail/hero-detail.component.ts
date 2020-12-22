@@ -18,7 +18,7 @@ export class HeroDetailComponent implements OnInit {
     private heroService: HeroService,
     private location: Location) {
 
-    this.hero = { id: 2, name: "Deathblow" }
+    //this.hero = { id: 2, name: "Deathblow" }
 
   }
 
@@ -34,5 +34,10 @@ export class HeroDetailComponent implements OnInit {
 
   goBack(): void {
     this.location.back();
+  }
+
+  save(): void {
+    this.heroService.updateHero(this.hero)
+      .subscribe(() => this.goBack());
   }
 }
