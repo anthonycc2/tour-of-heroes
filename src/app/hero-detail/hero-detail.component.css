@@ -1,0 +1,21 @@
+  button {
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial;
+  }
+  
+  button:hover {
+    background-color: #cfd8dc;
+  }
+
+  label {
+    font-weight: bold;
+    color: #503e92;
+  }
+
+  h2 {
+    color: #503e92;
+  }

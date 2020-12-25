@@ -4,11 +4,12 @@
         <a routerLink="/detail/{{hero.id}}">
             <span class="badge">{{hero.id}}</span> {{hero.name}}
         </a>
+        <button class="delete" title="delete hero" (click)="delete(hero)">x</button>
     </li>
 </ul>
 
 <div>
-    <label>Hero name:
+    <label>Nome:
       <input #heroName />
     </label>
     <!-- (click) passes input value to add() and then clears the input -->
@@ -16,21 +17,3 @@
       Adicionar
     </button>
 </div>
-
-<!--h2>Detalhes de {{hero.name}}</h2>
-<div>
-    <span>id: </span>{{hero.id}}
-</div>
-<div>
-    <label>Nome: </label><input [(ngModel)]="hero.name" placeholder="Digite o nome aqui">
-</div-->
-
-<!--h2>Detalhes de {{selectedHero.name | uppercase}}</h2>
-<div *ngIf="selectedHero">
-    <span>id: </span>{{selectedHero.id}}
-</div>
-<div>
-    <label>Nome: </label><input [(ngModel)]="selectedHero.name" placeholder="Digite o nome aqui">
-</div-->
-
-<!--app-hero-detail [hero]="selectedHero"></app-hero-detail-->

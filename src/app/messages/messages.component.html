@@ -4,6 +4,6 @@
     <button class="clear" (click)="messageService.clear()">Limpar</button>
     <br>
     <br>
-    <div *ngFor='let message of messageService.messages'> {{message}} </div>
+    <div *ngFor='let message of messageService.messages'><span class="messages"> {{message}} </span></div>
   
   </div>
